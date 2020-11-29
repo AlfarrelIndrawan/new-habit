@@ -2,3 +2,14 @@
     width: 4em;
     height: 2em;
 }
+
+body div {
+    margin: 2em 1em;
+}
+
+body div h4 {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
