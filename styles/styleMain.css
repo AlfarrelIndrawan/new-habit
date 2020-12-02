@@ -13,3 +13,13 @@ body div h4 {
     font-weight: bold;
     margin-bottom: 1em;
 }
+
+header {
+    margin-bottom: 5em;
+}
+
+@media only screen and (min-width: 1024px) {
+    header {
+        margin-bottom: 9em;
+    }
+}
