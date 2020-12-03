@@ -4,7 +4,7 @@
 }
 
 body div {
-    margin: 2em 1em;
+    margin: 2em 5em;
 }
 
 body div h4 {
@@ -26,6 +26,30 @@ header {
 
 .carousel-image {
     height: 10em;
-    width: 30em;
+    width: 100%;
     
 }
+
+#carouselExampleControls {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+
+footer p {
+    margin-bottom: 0em;
+}
+
+.nav-right {
+      float: right;
+ }
