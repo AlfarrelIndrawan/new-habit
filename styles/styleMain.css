@@ -1,10 +1,10 @@
 #logo {
-    width: 4em;
-    height: 2em;
+    width: auto;
+    height: 3em;
 }
 
 body div {
-    margin: 2em 5em;
+    margin: 0em 5em;
 }
 
 body div h4 {
@@ -12,6 +12,10 @@ body div h4 {
     font-size: 1em;
     font-weight: bold;
     margin-bottom: 1em;
+}
+
+body div h5 {
+    text-align: center;
 }
 
 header {
@@ -27,7 +31,7 @@ header {
 .carousel-image {
     height: 10em;
     width: 100%;
-    
+
 }
 
 #carouselExampleControls {
@@ -38,10 +42,10 @@ header {
 }
 
 footer {
-    left: 0;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: rgb(161, 161, 161);
     color: white;
     text-align: center;
   }
