@@ -69,3 +69,22 @@ footer p {
 .nav-right {
       float: right;
  }
+
+ .olahraga-gender {
+     border: black;
+     border-style: solid;
+     background-color: white;
+ }
+
+ .olahraga {
+     display: grid;
+     text-align: center;
+ }
+
+ #gender-laki {
+     grid-column: 1;
+ }
+
+ #gender-perempuan {
+     grid-column: 2;
+ }
