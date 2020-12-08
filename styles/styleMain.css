@@ -3,8 +3,19 @@
     height: 3em;
 }
 
-body div {
-    margin: 0em 5em;
+div.content-main {
+    padding: 3em 5em;
+    background-color: #f1eeee;
+}
+
+body {
+    background-color: #f1eeee;
+}
+
+div.new-life {
+    border-style: solid;
+    border-width: medium;
+    background-color: white;
 }
 
 body div h4 {
@@ -24,21 +35,22 @@ header {
 
 @media only screen and (min-width: 1024px) {
     header {
-        margin-bottom: 9em;
+        margin-bottom: 5em;
     }
 }
 
 .carousel-image {
-    height: 10em;
     width: 100%;
-
+    height: 15em;
 }
 
 #carouselExampleControls {
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+    width: 100%;
+    margin: 0em 0em;
+}
+
+#carousel-inner {
+    margin-left: 0em;
 }
 
 footer {
