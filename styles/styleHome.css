@@ -37,12 +37,22 @@ body div h5 {
     border: black;
     border-style: solid;
     background-color: white;
+    height: 15em;
+    width: 21em;
+    
 }
 
 .container-box {
     display: grid;
     text-align: center;
     grid-column-gap: 5em;
+    justify-content: space-evenly;
+}
+
+#index-kalkulator {
+    border: black;
+    border-style: solid;
+    background-color: orange;
 }
 
 #index-tentang-kita {
