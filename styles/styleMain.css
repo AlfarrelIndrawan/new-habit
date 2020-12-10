@@ -4,8 +4,14 @@
 }
 
 div.content-main {
-    padding: 3em 5em;
+    padding: 3em 8em;
     background-color: #f1eeee;
+}
+
+@media (max-width: 700px) {
+    div.content-main {
+        padding: 3em 3em;
+    }
 }
 
 body {
@@ -29,14 +35,12 @@ body div h5 {
     text-align: center;
 }
 
-header {
-    margin-bottom: 5em;
+header nav {
+    border-bottom: 11px solid black;
 }
 
-@media only screen and (min-width: 1024px) {
-    header {
-        margin-bottom: 5em;
-    }
+header {
+    margin-bottom: 5em;
 }
 
 .carousel-image {
@@ -79,12 +83,33 @@ footer p {
  .olahraga {
      display: grid;
      text-align: center;
+     grid-column-gap: 5em;
  }
 
- #gender-laki {
-     grid-column: 1;
+ @media (min-width: 700px) {
+    #gender-laki {
+        grid-column: 1;
+    }
+   
+    #gender-perempuan {
+        grid-column: 2;
+    }
  }
 
- #gender-perempuan {
-     grid-column: 2;
+ @media (max-width: 700px) {
+
+    .olahraga {
+        grid-row-gap: 3em;
+    }
+    #gender-laki {
+        grid-row: 1;
+    }
+   
+    #gender-perempuan {
+        grid-row: 2;
+    }
+ }
+
+ .active {
+     border-bottom: 3px solid rgb(255, 94, 0);
  }
