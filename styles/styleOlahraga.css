@@ -1,25 +1,54 @@
 .container-or {
     padding-top: 3em;
-    margin: 3em 3em;
+    margin: 3em 0em;
 }
 
-hr {
-    border-top: 5px solid orange;
+.garis-pertama {
+    margin-top: 3em;
 }
 
-h4 {
-    margin: 20px;
-  overflow :hidden;
-  color: gray;
-  text-align: left;
-  line-height: 1.6em;
+.garis-pertama h4 {
+    margin-left: 2em;
+    color: orangered;
 }
 
-h4:before {
-    display: block;
-    float: right;
-    margin-top: .8em; /* half the line-height */
-    border-top: 5px solid orange;
-    width: 50%;
-    content: "";
-  }
+#orange-line {
+    border-top: 7px solid orangered;
+    margin-right: -3em;
+    margin-top: -1.6em;
+    margin-left: 10em;
+}
+
+span {
+      color: orangered;
+}
+
+.konten {
+    display: grid;
+    margin-top: 5em;
+    row-gap: 4em;
+}
+
+.box-one {
+    grid-column: 2/4;
+    grid-row: 1;
+    background-image: linear-gradient(to right, rgb(255, 118, 68) 42% , white);
+    height: 16em;
+    border-radius: 25px;
+}
+
+.box-two {
+    grid-column: 1/3;
+    grid-row: 2;
+    background-image: linear-gradient(to left, rgb(235, 22, 6) 42% , white);
+    height: 16em;
+    border-radius: 25px;
+}
+
+.box-three {
+    grid-column: 2/4;
+    grid-row: 3;
+    background-image: linear-gradient(to right, rgb(134, 134, 134) 42% , white);
+    height: 16em;
+    border-radius: 25px;
+}
