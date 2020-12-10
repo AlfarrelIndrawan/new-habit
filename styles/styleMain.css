@@ -26,3 +26,8 @@ footer p {
  .active {
      border-bottom: 3px solid rgb(255, 94, 0);
  }
+
+ #logo {
+    width: auto;
+    height: 3em;
+}

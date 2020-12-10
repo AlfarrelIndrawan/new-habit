@@ -1,14 +1,4 @@
-#logo {
-    width: auto;
-    height: 3em;
-}
-
-div.content-main {
-    padding: 3em 8em;
-    background-color: #f1eeee;
-}
-
-body {
+    body {
     background-color: #f1eeee;
 }
 
@@ -55,6 +45,16 @@ body div h5 {
     grid-column-gap: 5em;
 }
 
+#index-tentang-kita {
+    border: black;
+    border-style: solid;
+    background-color: orange;
+}
+
+.gap-content {
+    margin: 3em 0em;
+}
+
 @media (min-width: 700px) {
    #box-satu {
        grid-column: 1;
@@ -63,9 +63,9 @@ body div h5 {
    #box-dua {
        grid-column: 2;
    }
-
    div.content-main {
-    padding: 3em 3em;
+    padding: 3em 8em;
+    background-color: #f1eeee;
 }
 }
 
@@ -80,4 +80,8 @@ body div h5 {
    #box-dua {
        grid-row: 2;
    }
+   div.content-main {
+    padding: 3em 3em;
+    background-color: #f1eeee;
+    }
 }
