@@ -3,20 +3,35 @@
     margin: 3em 0em;
 }
 
+.directory-or {
+    margin-left: 3em;
+}
+
 .garis-pertama {
     margin-top: 3em;
 }
 
-.garis-pertama h4 {
+#pemula {
     margin-left: 2em;
     color: orangered;
 }
 
-#orange-line {
+#lanjutan {
+    margin-left: 69em;
+    color: orangered;
+}
+
+#orange-line-satu {
     border-top: 7px solid orangered;
     margin-right: -3em;
     margin-top: -1.6em;
     margin-left: 10em;
+}
+
+#orange-line-dua {
+    border-top: 7px solid orangered;
+    margin-right: 12em;
+    margin-top: -1.6em;
 }
 
 span {
