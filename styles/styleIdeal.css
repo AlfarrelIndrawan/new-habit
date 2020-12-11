@@ -1,0 +1,28 @@
+.container-awal {
+    padding-top: 3em;
+    background-color: #f1eeee;
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+}
+
+.directory {
+    padding-left: 3em;
+}
+
+.directory span {
+    color: orangered;
+}
+
+.konten-awal {
+    padding-left: 3em;
+}
+
+.konten-awal h1 {
+    color: orangered;
+    padding-bottom: 0.3em;
+}
+
+.konten-awal p {
+    margin-bottom: 0em;
+}
+

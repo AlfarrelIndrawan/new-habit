@@ -1,59 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styleMain.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styleMain.css">
+  <link rel="stylesheet" href="styles/styleIdeal.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/Logo.svg" alt="Logo New Habit" id="logo">
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/Logo.svg" alt="Logo New Habit" id="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse float-right" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Olahraga
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse float-right" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Olahraga
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="lakilaki.html">Laki-laki</a>
-                    <a class="dropdown-item" href="perempuan.html">Perempuan</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Gaya Hidup
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="polamakan.html">Pola Makan</a>
-                      <a class="dropdown-item" href="polahidup.html">Pola Hidup</a>
-                    </div>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="akuideal.html">Aku Ideal?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tentangkita.html">Tentang Kita</a>
-                </li>
-              </ul>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="lakilaki.html">Laki-laki</a>
+              <a class="dropdown-item" href="perempuan.html">Perempuan</a>
             </div>
-          </nav>
-    </header>
-    <footer class="footer-logo">
-      <img src="images/Logo.svg" alt="Logo-new-habit">
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Gaya Hidup
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="polamakan.html">Pola Makan</a>
+              <a class="dropdown-item" href="polahidup.html">Pola Hidup</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="akuideal.html">Aku Ideal?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tentangkita.html">Tentang Kita</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="container-ideal">
+    <div class="container-awal">
+      <div class="directory">
+        <p>BERANDA / <span>AKU IDEAL?</span></p>
+      </div>
+      <div class="konten-awal">
+        <h1>INDEKS MASSA TUBUH</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit rutrum pellentesque. Cras tristique
+          felis ut velit dignissim iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+          cubilia curae; Mauris mollis consectetur erat eget fermentum. Ut vitae ipsum imperdiet, eleifend justo eget,
+          sodales lacus. Pellentesque feugiat lacus eget luctus porttitor. Donec sit amet est tincidunt, pulvinar est
+          vitae, placerat lacus. Suspendisse congue lacinia augue a tempor. estibulum a commodo libero. Ut tincidunt
+          blandit elementum. Praesent eu mauris finibus, commodo mi ac, pulvinar diam. Curabitur ornare libero sit amet
+          sodales vestibulum. Fusce lobortis lectus sed mollis accumsan. Morbi a tellus vel mauris fringilla vestibulum.
+          Etiam suscipit suscipit ante sed dignissim. Donec imperdiet hendrerit mauris et auctor. Vivamus cursus, odio
+          non rhoncus facilisis, magna ex lobortis nisl, venenatis semper dui augue eget neque.</p>
+      </div>
+    </div>
+    <div class="konten">
+
+    </div>
+  </div>
+  <footer class="footer-logo">
+    <img src="images/Logo.svg" alt="Logo-new-habit">
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
