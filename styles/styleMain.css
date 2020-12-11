@@ -6,7 +6,7 @@ header {
     margin-bottom: 5em;
 }
 
-footer {
+footer .main{
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -17,6 +17,18 @@ footer {
 
 footer p {
     margin-bottom: 0em;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid black;
+}
+
+.footer-logo img{
+    height: 4em;
+    width: auto;
+    margin: 0.5em 0em;
 }
 
 .nav-right {
