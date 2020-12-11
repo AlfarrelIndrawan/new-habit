@@ -9,28 +9,35 @@
 
 .garis-pertama {
     margin-top: 3em;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #pemula {
-    margin-left: 2em;
+    margin: 0em 2em 0em 2em;
     color: orangered;
+    order: 1;
+    align-self: center;
 }
 
 #lanjutan {
-    margin-left: 69em;
+    margin: 0em 2em 0em 2em;
     color: orangered;
+    order: 2;
 }
 
 #orange-line-satu {
     border-top: 7px solid orangered;
-    margin-top: -1.6em;
-    margin-left: 10em;
+    order: 2;
+    width: 100%;
+    align-self: center;
 }
 
 #orange-line-dua {
     border-top: 7px solid orangered;
-    margin-right: 12em;
-    margin-top: -1.6em;
+    order: 1;
+    width: 100%;
+    align-self: center;
 }
 
 span {
