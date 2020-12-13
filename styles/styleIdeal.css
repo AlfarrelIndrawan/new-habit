@@ -132,11 +132,6 @@
     grid-column: 4;
 }
 
-
-.lingkaran h6 {
-    justify-self: center;
-}
-
 #hitung-bmi {
     grid-row: 5;
     grid-column: 2/4;
@@ -154,7 +149,10 @@
     height: 90%;
     width: 90%;
     border-radius: 25px;
-    padding-left: 4em;
+    padding-left: 10em;
+    padding-bottom: 3em;
+    grid-column-gap: 3em;
+    grid-template-columns: max-content;
 }
 
 #container-underweight {
@@ -162,6 +160,17 @@
     grid-column: 1;
     border-right: 6px solid #0071bc;
     padding-right: 1em;
+    width: 17em;
+}
+
+#lingkaran-underweight {
+    width: 30px;
+    height: 30px;
+    background-color: #0071bc;
+    border-radius: 50%;
+    position: relative;
+    right: -15.9em;
+    top: -10em;
 }
 
 #konten-underweight {
@@ -181,6 +190,17 @@
     grid-column: 1;
     border-right: 6px solid #8cc63f;
     padding-right: 1em;
+    width: 17em;
+}
+
+#lingkaran-normal {
+    width: 30px;
+    height: 30px;
+    background-color: #8cc63f;
+    border-radius: 50%;
+    position: relative;
+    right: -15.9em;
+    top: -10em;
 }
 
 #konten-normal {
@@ -200,6 +220,17 @@
     grid-column: 1;
     border-right: 6px solid #ff9800;
     padding-right: 1em;
+    width: 17em;
+}
+
+#lingkaran-overweight {
+    width: 30px;
+    height: 30px;
+    background-color: #ff9800;
+    border-radius: 50%;
+    position: relative;
+    right: -15.9em;
+    top: -10em;
 }
 
 #konten-overweight {
@@ -219,6 +250,17 @@
     grid-column: 1;
     border-right: 6px solid #be1e2d;
     padding-right: 1em;
+    width: 17em;
+}
+
+#lingkaran-obese {
+    width: 30px;
+    height: 30px;
+    background-color: #be1e2d;
+    border-radius: 50%;
+    position: relative;
+    right: -15.9em;
+    top: -10em;
 }
 
 #konten-obese {

@@ -11,17 +11,47 @@ function computeBMI() {
     if(btnPerempuan.classList.contains("gender-active")) {
         hasil -= 0.5;
     }
-    //Display result of calculation
-    document.getElementById("hasil").innerText = hasil;
 
-    if (hasil < 18.5)
-        document.getElementById("kategori").innerText = "Underweight";
-    else if (hasil >= 18.5 && hasil <= 25)
-        document.getElementById("kategori").innerText = "Normal";
-    else if (hasil >= 25 && hasil <= 30)
-        document.getElementById("kategori").innerText = "Obese";
-    else if (hasil > 30)
-        document.getElementById("kategori").innerText = "Overweight";
+    if (hasil < 18.5) {
+        document.getElementById("lingkaran-underweight").style.display = "block";
+        document.getElementById("konten-underweight").style.display = "block";
+        document.getElementById("lingkaran-normal").style.display = "none";
+        document.getElementById("konten-normal").style.display = "none";
+        document.getElementById("lingkaran-overweight").style.display = "none";
+        document.getElementById("konten-overweight").style.display = "none";
+        document.getElementById("lingkaran-obese").style.display = "none";
+        document.getElementById("konten-obese").style.display = "none";
+    }
+    else if (hasil >= 18.5 && hasil <= 25) {
+        document.getElementById("lingkaran-underweight").style.display = "none";
+        document.getElementById("konten-underweight").style.display = "none";
+        document.getElementById("lingkaran-normal").style.display = "block";
+        document.getElementById("konten-normal").style.display = "block";
+        document.getElementById("lingkaran-overweight").style.display = "none";
+        document.getElementById("konten-overweight").style.display = "none";
+        document.getElementById("lingkaran-obese").style.display = "none";
+        document.getElementById("konten-obese").style.display = "none";
+    }
+    else if (hasil >= 25 && hasil <= 30) {
+        document.getElementById("lingkaran-underweight").style.display = "none";
+        document.getElementById("konten-underweight").style.display = "none";
+        document.getElementById("lingkaran-normal").style.display = "none";
+        document.getElementById("konten-normal").style.display = "none";
+        document.getElementById("lingkaran-overweight").style.display = "block";
+        document.getElementById("konten-overweight").style.display = "block";
+        document.getElementById("lingkaran-obese").style.display = "none";
+        document.getElementById("konten-obese").style.display = "none";
+    }
+    else if (hasil > 30) {
+        document.getElementById("lingkaran-underweight").style.display = "none";
+        document.getElementById("konten-underweight").style.display = "none";
+        document.getElementById("lingkaran-normal").style.display = "none";
+        document.getElementById("konten-normal").style.display = "none";
+        document.getElementById("lingkaran-overweight").style.display = "none";
+        document.getElementById("konten-overweight").style.display = "none";
+        document.getElementById("lingkaran-obese").style.display = "block";
+        document.getElementById("konten-obese").style.display = "block";
+    }
 }
 
 function lakiActive() {
@@ -54,9 +84,5 @@ function perempuanActive() {
 
 function hide() {
     var container = document.getElementById("container-hasil");
-    if (container.style.display === "none") {
-      container.style.display = "grid";
-    } else {
-      container.style.display = "none";
-    }
+    container.style.display = "grid";
   }
