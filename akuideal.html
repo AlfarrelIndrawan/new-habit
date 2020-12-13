@@ -9,6 +9,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styleMain.css">
   <link rel="stylesheet" href="styles/styleIdeal.css">
+  <script src="scripts/bmi.js"></script>
 </head>
 
 <body>
@@ -74,8 +75,90 @@
           non rhoncus facilisis, magna ex lobortis nisl, venenatis semper dui augue eget neque.</p>
       </div>
     </div>
-    <div class="konten">
-
+    <div class="container-akhir">
+      <div class="konten">
+        <h4 class="satu-satu">Jenis Kelamin</h4>
+        <form action="" id="container-laki">
+          <input type="button" value="Laki-laki" class="box-gender" id="laki" onclick="lakiActive()">
+        </form>
+        <form action="" id="container-perempuan">
+          <input type="button" value="perempuan" class="box-gender" id="perempuan" onclick="perempuanActive()">
+        </form>
+        <h4 class="satu-dua">Umur Anda</h4>
+        <form action="">
+          <input type="text" name="umur" id="umur">
+        </form>
+        <h4 class="satu-tiga">Tinggi Badan</h4>
+        <form action="">
+          <input type="text" name="tinggi" id="tinggi">
+        </form>
+        <h4 class="satu-empat">Berat Badan</h4>
+        <form action="">
+          <input type="text" name="berat" id="berat">
+        </form>
+        <div class="garis"></div>
+        <h2 class="empat-satu angka"><span>1</span></h2>
+        <h2 class="empat-dua angka"><span>2</span></h2>
+        <h2 class="empat-tiga angka"><span>3</span></h2>
+        <h2 class="empat-empat angka"><span>4</span></h2>
+        <input type="button" value="hitung" onclick="hide(); computeBMI();" id="hitung-bmi">
+      </div>
+      <div id="container-hasil" style="display: grid;">
+        <div id="container-underweight">
+          <svg xmlns="http://www.w3.org/2000/svg" width="190" height="297" viewBox="0 0 190 297" id="underweight">
+            <g fill="#0071BC">
+              <path
+                d="M59.457 99.234l-46.864 46.497c-3.457 3.431-3.457 8.992 0 12.423l1.64 1.627c2.288 2.29 5.656 3.156 8.778 2.259 2.357-.678 5.18-3.614 6.922-5.331l32.655-32.402c1.73-1.717 3.142-1.13 3.142 1.287v145.578C65.94 278.317 71.84 284 79.046 284c7.205 0 13.105-5.683 13.315-12.828V205.95c-.08-1.518.69-2.956 2.004-3.739 1.314-.783 2.956-.783 4.27 0 1.313.783 2.084 2.221 2.004 3.74v65.21c.21 7.144 6.11 12.828 13.315 12.828 7.206 0 13.105-5.684 13.316-12.828V125.583c0-2.428 1.4-3.004 3.142-1.288l32.666 32.403c1.73 1.716 4.554 4.653 6.911 5.33 3.119.898 6.483.032 8.767-2.259l1.651-1.626c3.457-3.43 3.457-8.992 0-12.423l-46.864-46.497c-4.185-3.733-9.534-5.929-15.154-6.223h-43.79c-5.617.3-10.962 2.5-15.142 6.234zM128 53.488c.005 13.146-7.91 25-20.055 30.034-12.143 5.034-26.124 2.256-35.421-7.038s-12.08-23.273-7.05-35.419C70.504 28.92 82.354 21 95.5 21c8.619-.003 16.885 3.418 22.98 9.512 6.096 6.093 9.52 14.358 9.52 22.976z" />
+            </g>
+          </svg>
+        </div>
+        <div id="konten-underweight">
+          <p>Ups! Berat badan anda kurang ideal nih, sebagai solusinya anda membutuhkan asupan kalori 300-500 kkal per
+            hari. Perbaiki juga pola makan dan pola hidup anda untuk mendapatkan berat badan ideal.</p>
+        </div>
+        <div id="container-normal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="208" height="297" viewBox="0 0 208 297" id="normal">
+            <g fill="none">
+              <path fill="#FFF"
+                d="M384 71.488c.005 13.146-7.91 25-20.055 30.034-12.143 5.034-26.124 2.256-35.421-7.038s-12.08-23.273-7.05-35.419C326.504 46.92 338.354 39 351.5 39c8.619-.003 16.885 3.418 22.98 9.512 6.096 6.093 9.52 14.358 9.52 22.976zM308.828 116.277l-41.04 41.025c-1.724 1.722-4.626 4.532-5.669 6.718-2.147 4.696-1.148 10.23 2.506 13.88l.476.475c4.834 4.83 12.67 4.83 17.504 0l29.318-29.299c1.723-1.722 3.117-1.133 3.117 1.292v135.73c0 8.783 7.124 15.902 15.912 15.902s15.912-7.12 15.912-15.901v-62.767c-.08-1.523.687-2.966 1.995-3.751 1.308-.786 2.943-.786 4.251 0 1.308.785 2.076 2.228 1.996 3.75V286.1c0 8.782 7.123 15.901 15.911 15.901s15.912-7.12 15.912-15.901V150.368c0-2.436 1.394-3.014 3.117-1.292l29.352 29.31c4.834 4.83 12.67 4.83 17.505 0l.464-.475c2.326-2.316 3.633-5.46 3.633-8.741 0-3.28-1.307-6.426-3.633-8.741l-44.214-44.186c-4.168-3.745-9.494-5.948-15.09-6.243h-54.146c-5.6.304-10.927 2.52-15.09 6.277z"
+                transform="translate(-246 -14)" />
+              <g fill="#8CC63F">
+                <path
+                  d="M123 32.488c.005 13.146-7.91 25-20.055 30.034-12.143 5.034-26.124 2.256-35.421-7.038s-12.08-23.273-7.05-35.419C65.504 7.92 77.354 0 90.5 0c8.619-.003 16.885 3.418 22.98 9.512 6.096 6.093 9.52 14.358 9.52 22.976zM47.837 78.288L6.789 119.302c-1.724 1.722-4.626 4.532-5.67 6.73-2.147 4.695-1.148 10.23 2.506 13.879l.477.476c4.835 4.829 12.672 4.829 17.507 0l29.323-29.3c1.724-1.721 3.119-1.132 3.119 1.292V248.1c0 8.782 7.125 15.901 15.914 15.901 8.79 0 15.915-7.12 15.915-15.901v-62.756c-.08-1.523.688-2.966 1.996-3.751 1.308-.785 2.943-.785 4.252 0 1.308.785 2.075 2.228 1.995 3.751V248.1c0 8.782 7.126 15.901 15.915 15.901 8.79 0 15.915-7.12 15.915-15.901v-135.72c0-2.436 1.394-3.013 3.118-1.291l29.323 29.299c4.835 4.829 12.673 4.829 17.508 0l.465-.476c2.326-2.316 3.633-5.46 3.633-8.741 0-3.28-1.307-6.426-3.633-8.741l-44.223-44.186c-4.168-3.745-9.495-5.948-15.093-6.243H62.93c-5.603.308-10.93 2.527-15.092 6.288z"
+                  transform="translate(-246 -14) translate(261 35)" />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div id="konten-normal">
+          <p>Ups! Berat badan anda kurang ideal nih, sebagai solusinya anda membutuhkan asupan kalori 300-500 kkal per
+            hari. Perbaiki juga pola makan dan pola hidup anda untuk mendapatkan berat badan ideal.</p>
+        </div>
+        <div id="container-overweight">
+          <svg xmlns="http://www.w3.org/2000/svg" width="220" height="297" viewBox="0 0 220 297" id="overweight">
+            <g fill="#FF9800">
+              <path
+                d="M144 53.488c.005 13.146-7.91 25-20.055 30.034-12.143 5.034-26.124 2.256-35.421-7.038s-12.08-23.273-7.05-35.419C86.504 28.92 98.354 21 111.5 21c8.619-.003 16.885 3.418 22.98 9.512 6.096 6.093 9.52 14.358 9.52 22.976zM44.483 166.888l15.714-15.648c2.08-2.073 3.763-1.382 3.763 1.553v109.24c0 12.69 9.495 22.967 21.195 22.967 11.7 0 21.195-10.277 21.195-22.967v-55.714c-.115-1.546.647-3.027 1.975-3.835 1.329-.809 2.999-.809 4.327 0 1.328.808 2.09 2.289 1.976 3.835v55.702c0 12.725 9.448 22.922 21.194 22.922 11.746 0 21.229-10.197 21.229-22.922v-109.24c0-2.934 1.683-3.626 3.752-1.552l15.714 15.659c6.922 6.85 18.094 6.85 25.016 0l2.274-2.266c3.325-3.313 5.193-7.807 5.193-12.492 0-4.686-1.868-9.18-5.193-12.493L163.27 99.243c-4.182-3.742-9.522-5.945-15.135-6.243H72.818c-5.609.298-10.946 2.5-15.123 6.243L17.193 139.65C13.868 142.962 12 147.455 12 152.14c0 4.686 1.868 9.18 5.193 12.492l2.274 2.266c6.923 6.854 18.1 6.849 25.016-.011z" />
+            </g>
+          </svg>
+        </div>
+        <div id="konten-overweight">
+          <p>Ups! Berat badan anda kurang ideal nih, sebagai solusinya anda membutuhkan asupan kalori 300-500 kkal per
+            hari. Perbaiki juga pola makan dan pola hidup anda untuk mendapatkan berat badan ideal.</p>
+        </div>
+        <div id="container-obese">
+          <svg xmlns="http://www.w3.org/2000/svg" width="236" height="297" viewBox="0 10 236 311" id="obese">
+            <g fill="#BE1E2D">
+              <path
+                d="M17.245 180.91l1.086 1.13c8.352 8.256 21.458 8.674 29.273.949l10.375-10.244c2.08-2.067 3.77-1.378 3.77 1.547v97.73c0 9.282 5.01 17.857 13.14 22.498 8.132 4.64 18.15 4.64 26.28 0 8.132-4.64 13.14-13.216 13.14-22.497v-51.955c-.08-1.518.693-2.956 2.012-3.739 1.318-.783 2.966-.783 4.284 0 1.318.783 2.092 2.221 2.011 3.74v51.954c0 14.347 11.766 25.977 26.28 25.977 14.514 0 26.28-11.63 26.28-25.977V174.27c0-2.926 1.691-3.615 3.782-1.559l10.375 10.255c7.815 7.726 20.92 7.308 29.262-.948l1.142-1.13c8.35-8.256 8.35-21.64 0-29.896l-38.197-37.769c-4.205-3.73-9.576-5.927-15.22-6.223h-95.6c-5.64.297-11.007 2.493-15.209 6.223l-38.208 37.769c-4.025 3.958-6.292 9.336-6.303 14.948-.01 5.611 2.236 10.997 6.245 14.97zM150 67.477c.01 13.153-7.91 25.015-20.063 30.048-12.151 5.034-26.14 2.246-35.433-7.061-9.294-9.307-12.062-23.299-7.012-35.444 5.05-12.144 16.924-20.048 30.077-20.02 17.916.031 32.425 14.56 32.431 32.477z" />
+            </g>
+          </svg>
+        </div>
+        <div id="konten-obese">
+          <p>Ups! Berat badan anda kurang ideal nih, sebagai solusinya anda membutuhkan asupan kalori 300-500 kkal per
+            hari. Perbaiki juga pola makan dan pola hidup anda untuk mendapatkan berat badan ideal.</p>
+        </div>
+      </div>
     </div>
   </div>
   <footer class="footer-logo">

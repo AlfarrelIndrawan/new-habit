@@ -23,6 +23,8 @@ footer p {
     display: flex;
     justify-content: center;
     border-top: 5px solid black;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-logo img{
