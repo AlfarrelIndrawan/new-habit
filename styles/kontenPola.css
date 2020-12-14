@@ -1,0 +1,38 @@
+.container-pola {
+    margin: 0em 0em;
+}
+
+@media (max-width: 769px) {
+    .container-awal {
+        padding: 3em 1em 4em 2em;
+        background-color: #f1eeee;
+        border-bottom: 2px solid black;
+        
+    }    
+}
+
+@media (min-width: 768px) {
+    .container-awal {
+        padding: 4em 10em 3em 5em;
+        background-color: #f1eeee;
+        border-bottom: 2px solid black;
+        
+    }
+}
+
+h2, h4 {
+    font-weight: bold;
+    margin: 1em 0em;
+}
+
+h2, span {
+    color: #f63;
+}
+
+h5 {
+    margin: 0.75em 0em;
+}
+
+li {
+    font-size: 16px;
+}
