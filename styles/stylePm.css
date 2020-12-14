@@ -33,15 +33,32 @@ span {
     background : url('../images/polahidup.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-top: 5em;
-    padding-bottom: 3em;
     background-size: 100%;
+}
+
+@media (max-width: 768px) {
+    .container-akhir {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .konten {
+        row-gap: 1em;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-akhir {
+        padding-top: 5em;
+        padding-bottom: 3em;
+    }
+    .konten {
+        row-gap: 4em;
+    }
 }
 
 .konten {
     display: grid;
     margin: 0em 0em 0em 1em;
-    row-gap: 4em;
 }
 
 .konten p{
