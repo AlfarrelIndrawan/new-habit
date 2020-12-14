@@ -32,7 +32,7 @@ span {
 .container-akhir {
     background : url('../images/polahidup.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-size: 100%;
 }
 
