@@ -52,13 +52,33 @@ body div h5 {
 #index-kalkulator {
     border: black;
     border-style: solid;
-    background-color: orange;
+    background-color: #e9772a;
+    display: grid;
+    padding: 0.5em 0.5em 1em 0.5em;
+}
+
+.img-bmi {
+    grid-column: 1;
+}
+
+.konten-bmi {
+    grid-column: 2;
+}
+
+@media (max-width: 768px) {
+    .img-bmi {
+        grid-column: 1;
+    }
+    
+    .konten-bmi {
+        grid-column: 1;
+    }
 }
 
 #index-tentang-kita {
     border: black;
     border-style: solid;
-    background-color: orange;
+    background-color: #e9772a;
 }
 
 .gap-content {
