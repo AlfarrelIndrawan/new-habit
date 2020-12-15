@@ -6,17 +6,23 @@ div.new-life {
     border-style: solid;
     border-width: medium;
     background-color: white;
+    padding: 1em 2em;
 }
 
-body div h4 {
+.new-life h2 {
     text-align: center;
-    font-size: 1em;
     font-weight: bold;
     margin-bottom: 1em;
+    font-size: 1.8vmax;
 }
 
-body div h5 {
+.new-life p {
+    font-size: 1.4vmax;
+}
+
+h5 {
     text-align: center;
+    font-size: 1.8vmax;
 }
 
 .carousel-image {
@@ -39,14 +45,13 @@ body div h5 {
     background-color: white;
     height: 15em;
     width: 21em;
-    
 }
 
 .container-box {
     display: grid;
     text-align: center;
     grid-column-gap: 5em;
-    justify-content: space-evenly;
+    justify-content: space-evenly;;
 }
 
 #index-kalkulator {
@@ -62,6 +67,18 @@ body div h5 {
     width: auto;
     justify-self: center;
     align-self: center;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid black;
+    bottom: 0;
+    width: 100%;
+}
+
+#quote {
+    font-style: italic;
 }
 
 @media (min-width: 768px) {
@@ -133,6 +150,14 @@ body div h5 {
 
 .gap-content {
     margin: 3em 0em;
+}
+
+.h4-link {
+    color: black;
+}
+
+.h4-link:hover {
+    text-decoration: none;
 }
 
 @media (min-width: 700px) {

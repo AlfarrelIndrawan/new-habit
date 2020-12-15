@@ -10,15 +10,6 @@ body {
     font-family: 'Raleway', 'Open Sans';
 }
 
-footer .main{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(161, 161, 161);
-    color: white;
-    text-align: center;
-  }
-
 footer p {
     margin-bottom: 0em;
 }
