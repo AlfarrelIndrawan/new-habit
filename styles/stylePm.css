@@ -44,6 +44,12 @@ span {
     .konten {
         row-gap: 1em;
     }
+
+    .box-one, .box-two, .box-three {
+        grid-column: 1/4;
+        margin-left: 1em;
+        padding-right: 0em;
+    }
 }
 
 @media (min-width: 768px) {
@@ -104,6 +110,8 @@ span {
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
+
 
 .teks-1{
     margin-left: 20em;

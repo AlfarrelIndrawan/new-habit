@@ -59,10 +59,60 @@ body div h5 {
 
 .img-bmi {
     grid-column: 1;
+    width: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+@media (min-width: 768px) {
+    .img-bmi {
+        height: 20em;
+    }
+
+    #index-kalkulator {
+        width: auto;
+    }
+    
+    .konten-bmi h2 {
+        margin: 1em 10em 0em 10em;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-bmi {
+        height: 10em;
+    }
+    
+    #index-kalkulator {
+        width: min-content;
+    }
+    
+    .konten-bmi h2 {
+        margin: 1em 2em 0em 2em;
+    }
 }
 
 .konten-bmi {
     grid-column: 2;
+    color: white;
+    padding: 1em 1em;
+}
+
+.konten-bmi h3 {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.konten-bmi p {
+    font-size: 18px;
+    padding: 0 2em;
+}
+
+.konten-bmi h2 {
+    color: white;
+    background-color: black;
+    text-align: center;
+    justify-self: center;
 }
 
 @media (max-width: 768px) {

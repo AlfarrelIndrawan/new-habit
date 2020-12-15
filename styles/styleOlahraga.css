@@ -84,7 +84,7 @@
         grid-column: 1;
         grid-row: 1;
         text-align: center;
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     .button-1 {
@@ -93,13 +93,13 @@
         background-color: rgb(56, 49, 49);
         color: white;
         width: 50%;
-        height: 50%;
+        height: 60%;
         text-align: center;
         justify-self: center;
     }
 
     .button-1 h1 {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     .button-1 h1:hover {
@@ -113,6 +113,12 @@
         }
         .button-1 h1 {
             font-size: 7vw;
+        }
+
+        .box-one, .box-two, .box-three {
+            grid-column: 1/5;
+            margin-left: 1em;
+            padding-right: 0em;
         }
     }
 
