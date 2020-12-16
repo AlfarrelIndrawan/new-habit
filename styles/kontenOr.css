@@ -24,7 +24,7 @@ span {
 }
 
 .box-satu {
-    background-image: linear-gradient(to right, #f9b76d 33% , white);
+    background-image: linear-gradient(to right, #f9b76d -20% , white);
     height: auto;
     width: auto;
     display: grid;
@@ -50,7 +50,7 @@ span {
 }
 
 .box-dua {
-    background-image: linear-gradient(to left, #f9b76d 33% , white);
+    background-image: linear-gradient(to left, #f9b76d -20% , white);
     height: auto;
     width: auto;
     display: grid;
@@ -58,19 +58,19 @@ span {
 }
 
 .merah-kiri {
-    background-image: linear-gradient(to left, rgb(235, 22, 6) 42%, white);
+    background-image: linear-gradient(to left, rgb(235, 22, 6) -20%, white);
 }
 
 .merah-kanan {
-    background-image: linear-gradient(to right, rgb(235, 22, 6) 42%, white);
+    background-image: linear-gradient(to right, rgb(235, 22, 6) -20%, white);
 }
 
 .abu-kiri {
-    background-image: linear-gradient(to left, rgb(134, 134, 134) 42%, white);
+    background-image: linear-gradient(to left, rgb(134, 134, 134) -20%, white);
 }
 
 .abu-kanan {
-    background-image: linear-gradient(to right rgb(134, 134, 134) 42%, white);
+    background-image: linear-gradient(to right rgb(134, 134, 134) -20%, white);
 }
 
 
