@@ -54,6 +54,16 @@
     .konten h3 {
         font-size: 5.5vw;
     }
+
+    .konten {
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    .box {
+        margin: 1em;
+    }
+
     .konten p {
         font-size: 4.5vw;
         padding: 0em;
