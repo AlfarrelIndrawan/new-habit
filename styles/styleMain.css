@@ -20,6 +20,7 @@ footer p {
     border-top: 5px solid black;
     bottom: 0;
     width: 100%;
+    background-color: white;
 }
 
 .footer-logo img{
@@ -39,4 +40,17 @@ footer p {
  #logo {
     width: auto;
     height: 3em;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: black underline;
+}
+
+span {
+    color: orangered;
 }

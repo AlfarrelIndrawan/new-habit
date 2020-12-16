@@ -1,3 +1,7 @@
+body {
+    background-color: #f1eeee;
+}
+
 .container-or {
     padding-top: 3em;
     padding-left: 3em;
@@ -75,8 +79,35 @@ span {
     padding: 2em 5em;
 }
 
-.box-satu, .box-dua h5{
+.box-satu h5, .box-dua h5{
     text-align: center;
+    font-size: 1.5vw;
+}
+
+.box-satu p, .box-dua p{
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+
+.selanjutnya {
+    margin: 2em 2em 2em 0em;
+    background-color: #f63;
+    border-radius: 25px;
+    float: right;
+    padding: 0.5em 3em;
+    box-shadow: 2px 2px 7px black;
+    color: black;
+}
+
+.kembali {
+    margin: 2em 2em 2em 0em;
+    background-color: #f63;
+    border-radius: 25px;
+    float: left;
+    padding: 0.5em 4em;
+    box-shadow: 2px 2px 7px black;
+    color: black;
 }
 
 @media (max-width: 769px) {
@@ -111,5 +142,21 @@ span {
         grid-row: 2;
         grid-column: 1;
         margin-bottom: 1em;
+        font-size: 10vw;
+    }
+    
+    .box-satu p, .box-dua p{
+        text-align: center;
+        font-size: 5.3vw;
+    }
+
+    .selanjutnya {
+        margin: 1em 1em 1em 0em;
+        padding: 0.5em 1em;
+    }
+    
+    .kembali {
+        margin: 1em 1em 1em 0em;
+        padding: 0.5em 1em;
     }
 }
