@@ -1,0 +1,61 @@
+.container-isi {
+    background-color: #f1eeee;
+    padding: 3em;
+    color: black;
+}
+
+.directory {
+    margin-bottom: 2em;
+}
+
+.directory p {
+    font-size: 1.1vw;
+}
+
+.konten {
+    background-color: #ffa060;
+    padding: 2em;
+}
+
+.konten h3 {
+    text-align: center;
+    font-size: 1.8vw;
+    margin-bottom: 1.5em;
+}
+
+.konten p {
+    font-size: 1.3vw;
+    padding: 0em 2em;
+}
+
+.anggota {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.box {
+    margin: 2em;
+}
+
+.box img {
+    height: 10em;
+    width: 10em;
+    text-align: center;
+    display: block;
+    margin: 0em auto 2em auto;
+}
+
+@media (max-width: 769px) {
+    .directory p {
+        font-size: 5vw;
+    }
+    .konten h3 {
+        font-size: 5.5vw;
+    }
+    .konten p {
+        font-size: 4.5vw;
+        padding: 0em;
+    }
+}
