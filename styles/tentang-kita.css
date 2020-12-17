@@ -47,6 +47,31 @@
     margin: 0em auto 2em auto;
 }
 
+.footer-main {
+    border-top: 5px solid black;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+.footer-main h4 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    justify-content: center;
+}
+
+.icon {
+    height: 6em;
+    width: 6em;
+    margin: 1em 1em
+}
+
 @media (max-width: 769px) {
     .directory p {
         font-size: 5vw;
